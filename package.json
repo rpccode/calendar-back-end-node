@@ -2,13 +2,13 @@
     "name": "calendar-back-end-node",
     "version": "1.0.0",
     "description": "",
-    "main": "./src/index.js",
+    "main": "index.js",
     "engines": {
         "node": "18.x"
     },
     "scripts": {
-        "dev": "nodemon ./src/index.js",
-        "start": "node ./src/index.js"
+        "dev": "nodemon index.js",
+        "start": "node  index.js"
     },
     "keywords": [],
     "author": "",

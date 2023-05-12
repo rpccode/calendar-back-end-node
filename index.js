@@ -1,5 +1,5 @@
 const express = require('express');
-const { dbConnection } = require('./src/DB/config');
+const { dbConnection } = require('./DB/config');
 const cors = require('cors')
 require('dotenv').config();
 
@@ -16,8 +16,8 @@ app.use(express.json());
 
 
 
-app.use('/api/auth', require('./src/router/auth'))
-app.use('/api/events', require('./src/router/events'))
+app.use('/api/auth', require('./routers/auth'))
+app.use('/api/events', require('./routers/events'))
 
 
 app.listen(port, () => console.log(` app listening on port ${port}!`))
