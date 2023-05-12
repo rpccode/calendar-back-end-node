@@ -16,8 +16,8 @@ app.use(express.json());
 
 
 
-app.use('/api/auth', require('./routers/auth'))
-app.use('/api/events', require('./routers/events'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/events', require('./routes/events'))
 
 
 app.listen(port, () => console.log(` app listening on port ${port}!`))
